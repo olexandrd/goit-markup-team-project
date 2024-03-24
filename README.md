@@ -6,7 +6,7 @@
 
 Download LTS version (currently: v20) of NodeJS from [official website](https://nodejs.org/en/download/current) and install it according to your platform manuals.
 
-### Setup project 
+### Setup project
 
 Open terminal on project directory and run
 
