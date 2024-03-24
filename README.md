@@ -24,10 +24,10 @@ Project has one main `index.html` page.
 All sections, header and footer must be loaded using `load` function, like
 
 ```html
-<load src="src/html/header.html" />
+<load src="src/partials/header.html" />
 ```
 
-All ratrials resources (html sections, css, images) must be located on `src/html`, `src/css`, `src/images` respectively.
+All ratrials resources (html sections, css, images) must be located on `src/partials`, `src/css`, `src/images` respectively.
 
 Css for sections must be added as a separate files and included to `main.css`.
 
