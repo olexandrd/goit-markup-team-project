@@ -2,14 +2,21 @@
   "name": "english_excellence",
   "private": true,
   "version": "0.0.0",
+  "description": "English excellence single page site. GoIT final project at the end of basic HTML/CSS course.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "GoIT",
+    "final project"
+  ],
   "devDependencies": {
-    "vite": "^5.2.0",
+    "vite": "^5.2.6",
     "vite-plugin-html-inject": "^1.1.2"
   }
 }
