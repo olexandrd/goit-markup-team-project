@@ -27,9 +27,9 @@ All sections, header and footer must be loaded using `load` function, like
 <load src="src/partials/header.html" />
 ```
 
-All ratrials resources (html sections, css, images) must be located on `src/partials`, `src/css`, `src/images` respectively.
+All partials resources (html sections, css, images) must be located on `src/partials`, `src/css`, `src/images` respectively.
 
-Css for sections must be added as a separate files and included to `main.css`.
+CSS for sections must be added as a separate files and included to `main.css`.
 
 ### Local run
 
@@ -39,4 +39,4 @@ Open terminal on project directory and run
 npm run dev
 ```
 
-Open URL from command output log, like `Local:   http://localhost:5173/` on browser.
+Open URL from command output log, like `Local:   http://localhost:5173/goit-markup-team-project/` on browser.
