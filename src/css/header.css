@@ -46,7 +46,9 @@
   position: relative;
   font-weight: 600;
   line-height: 1.28571;
+  padding: 13px 0;
   color: var(--black);
+  outline: transparent;
 }
 
 .nav-link::after,
@@ -56,7 +58,7 @@
   width: 37px;
   height: 2px;
   position: absolute;
-  bottom: -4px;
+  bottom: 9px;
   left: 0;
   background-color: transparent;
   transition: background-color var(--transition);
@@ -79,6 +81,7 @@
   height: 44px;
   border: 1px solid rgba(18, 20, 23, 0.1);
   border-radius: 10px;
+  outline: transparent;
 }
 
 .menu-soc-icon {

@@ -15,9 +15,7 @@ const toggleMenu = () => {
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    toggleMenu();
-  });
+  link.addEventListener('click', toggleMenu);
 });
 // Close the mobile menu on wider screens if the device orientation changes
 window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
