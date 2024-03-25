@@ -15,7 +15,7 @@
   font-weight: 700;
   font-size: 20px;
   text-transform: lowercase;
-  color: rgb(var(--black));
+  color: var(--black);
 }
 
 .logo-web {
@@ -42,7 +42,7 @@
   position: relative;
   font-weight: 600;
   line-height: 1.28571;
-  color: rgb(var(--black));
+  color: var(--black);
 }
 
 .nav-link::after,
@@ -73,12 +73,12 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(var(--black), 0.1);
+  border: 1px solid rgba(18, 20, 23, 0.1);
   border-radius: 10px;
 }
 
 .menu-soc-icon {
-  fill: rgb(var(--black));
+  fill: var(--black);
   transition: fill var(--transition);
 }
 
@@ -103,7 +103,7 @@
 }
 
 .mobile-menu-icon {
-  stroke: rgb(var(--black));
+  stroke: var(--black);
   transition: stroke var(--transition);
 }
 

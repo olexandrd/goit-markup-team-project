@@ -1,11 +1,13 @@
 :root {
   /* Colors */
-  --black: 18, 20, 23;
+  /* --black: 18, 20, 23; */
+  --black: #121417;
   --green: #4dc274;
   --light-green: #d4fde1;
   --lighter-green: #bee8cc;
   --gray: #f3f5f6;
-  --white: 255, 255, 255;
+  /* --white: 255, 255, 255; */
+  --white: #fff;
 
   /* Fonts */
   --font-family: 'Manrope', sans-serif;
