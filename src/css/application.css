@@ -135,7 +135,10 @@ textarea.text-input {
   .application-section-description {
     font-size: 18px;
     line-height: 1.66667;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 64px;
+    max-width: 586px;
   }
 
   .application-section-form {
@@ -164,5 +167,53 @@ textarea.text-input {
   .application-section-form-message {
     font-size: 14px;
     line-height: 1.71429;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .application-section-description {
+    max-width: 709px;
+  }
+
+  .application-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 492px;
+    height: 578px;
+    border-radius: 30px;
+    padding: 0 20px 40px 20px;
+
+    background-color: var(--green);
+    background-image: url('../images/application/leave-an-application.png');
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .application-section-card-heading {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .application-section-card-description {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-section-form {
+    max-width: unset;
+    flex: 1;
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .application-section-card {
+    background-image: url('../images/application/leave-an-application@2x.png');
   }
 }
