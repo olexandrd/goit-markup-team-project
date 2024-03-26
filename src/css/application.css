@@ -6,7 +6,7 @@
   font-weight: 700;
   line-height: 1.125;
   letter-spacing: -0.64px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .application-section-description {
@@ -14,12 +14,13 @@
   text-align: center;
   font-size: 14px;
   line-height: 1.71429;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .application-section-form-container {
   display: flex;
   gap: 32px;
+  justify-content: center;
 }
 
 .application-section-card {
@@ -121,4 +122,47 @@ textarea.text-input {
   background-color: var(--green);
   outline: 2px solid var(--white);
   outline-offset: -4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-section-heading {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+  }
+
+  .application-section-description {
+    font-size: 18px;
+    line-height: 1.66667;
+    margin-bottom: 64px;
+  }
+
+  .application-section-form {
+    max-width: 500px;
+  }
+
+  textarea.text-input {
+    height: 104px;
+    margin-bottom: 32px;
+  }
+
+  .application-section-radio-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+
+    margin-bottom: 16px;
+  }
+
+  .application-section-radio-input-group {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .application-section-form-message {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
 }
