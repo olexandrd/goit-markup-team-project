@@ -5,9 +5,50 @@
 .reviews .container {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-
+    gap: 40px;
 }
+
+@media only screen and (min-width: 768px) {
+   .reviews .container {
+        gap: 64px;    
+  }
+}
+
+.reviews-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+   .reviews-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.reviews-description {
+    padding-top: 16px;
+    
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+@media only screen and (min-width: 768px) {
+   .reviews-description{
+       font-size: 18px;
+       line-height: 1.66667;
+       max-width: 647px;
+       margin: 0 auto;
+    }
+}
+
 
 .review-cards-wrapper {
     display: flex;
@@ -19,6 +60,7 @@
         gap: 32px;
     }
 }
+
 
 .review-card {
     display: flex;
@@ -35,38 +77,27 @@
 @media only screen and (min-width: 768px) {
    .review-card {
         gap: 32px;
-        width: 336px;
+        width: calc((100% - 1*32px) / 2);
         height: 326px;
-
         padding: 32px 16px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
    .review-card {
-        width: 320px;
-        height: 326px;
+        width: calc((100% - 2*32px) / 3);
   }
 }
 
-/* hiding the 2nd and 3rd cards in mobile */
-.card-2 {
-    display: none;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .card-2{
-        display: flex;
+        display:none
     }
 }
 
-.card-3 {
-    display: none;
-}
-
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1280px) {
     .card-3{
-        display: flex;
+        display: none;
     }
 }
 
@@ -107,8 +138,7 @@
 
 .review-card-text {
     padding: 0 14px;
-    max-height: 140px;
-    overflow: scroll;
+    overflow-y: auto;
 
     font-weight: 400;
     line-height: 1.71429;
@@ -118,6 +148,5 @@
 @media only screen and (min-width: 768px) {
    .review-card-text {
         padding: 0 16px;
-        max-height: 152px;
   }
 }
