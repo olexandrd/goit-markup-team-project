@@ -1,3 +1,127 @@
 .header {
-  background-color: lightcoral;
+  padding-bottom: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--white);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: var(--black);
+}
+
+.logo-web {
+  color: var(--green);
+}
+
+.nav,
+.menu-soc-list {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .nav,
+  .menu-soc-list {
+    display: flex;
+  }
+}
+
+.nav-list {
+  gap: 20px;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  line-height: 1.28571;
+  padding: 13px 0;
+  color: var(--black);
+  outline: transparent;
+}
+
+.nav-link::after,
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 2px;
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  background-color: transparent;
+  transition: background-color var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  background-color: var(--green);
+}
+
+.menu-soc-list {
+  gap: 12px;
+}
+
+.menu-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 10px;
+  outline: transparent;
+}
+
+.menu-soc-icon {
+  fill: var(--black);
+  transition: fill var(--transition);
+}
+
+.menu-soc-link:hover .menu-soc-icon,
+.menu-soc-link:focus .menu-soc-icon {
+  fill: var(--green);
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.mobile-menu-icon {
+  stroke: var(--black);
+  transition: stroke var(--transition);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-icon {
+    width: 40px;
+    height: 28px;
+  }
+}
+
+.menu-toggle:hover .mobile-menu-icon,
+.menu-toggle:focus .mobile-menu-icon {
+  stroke: var(--green);
 }
