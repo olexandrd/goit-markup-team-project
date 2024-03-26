@@ -46,15 +46,22 @@
 }
 
 .teachers-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(auto, 335px);
+  place-content: center;
   gap: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .teachers-list {
-    flex-direction: row;
+    grid-template-columns: repeat(2, minmax(auto, 272px));
     gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-list {
+    grid-template-columns: repeat(4, minmax(auto, 232px));
   }
 }
 
