@@ -46,7 +46,8 @@ img {
   max-width: 100%;
 }
 
-input {
+input,
+button {
   font-family: inherit;
 }
 

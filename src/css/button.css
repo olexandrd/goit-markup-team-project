@@ -1,0 +1,37 @@
+.button {
+  border: 1px solid var(--green);
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.55556;
+  padding: 15px 63px;
+  background-color: var(--green);
+  transition: var(--transition);
+  transition-property: background-color, border-color;
+}
+
+.button:hover,
+.button:focus {
+  border-color: #38ae5f;
+  background-color: #38ae5f;
+}
+
+.button.button--secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.button.button--secondary:hover,
+.button.button--secondary:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    font-size: 14px;
+    line-height: 1.71429;
+    padding: 13px 86px;
+  }
+}
