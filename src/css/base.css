@@ -20,9 +20,17 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   font-family: 'Manrope', sans-serif;
   color: var(--black);
+  background-color: var(--white);
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -59,6 +67,13 @@ button {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .section {
@@ -99,6 +114,25 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.word-effect {
+  display: inline-block;
+  position: relative;
+  padding: 0 4px;
+}
+
+.word-effect::after {
+  content: '';
+  display: block;
+  border-radius: 8px;
+  background: #bee8cc;
+  height: 20px;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 /*#endregion Misc */
