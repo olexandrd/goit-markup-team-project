@@ -4,6 +4,6 @@ import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig({
   root: resolve(__dirname, '.'),
-  base: 'goit-markup-team-project/',
+  base: './',
   plugins: [injectHTML()],
 });

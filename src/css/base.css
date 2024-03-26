@@ -102,4 +102,23 @@ button {
   overflow: hidden;
 }
 
+.word-effect {
+  display: inline-block;
+  position: relative;
+  padding: 0 4px;
+}
+
+.word-effect::after {
+  content: '';
+  display: block;
+  border-radius: 8px;
+  background: #bee8cc;
+  height: 20px;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
 /*#endregion Misc */
