@@ -39,4 +39,4 @@ Open terminal on project directory and run
 npm run dev
 ```
 
-Open URL from command output log, like `Local:   http://localhost:5173/goit-markup-team-project/` on browser.
+Open URL from command output log, like `Local:   http://localhost:5173` on browser.

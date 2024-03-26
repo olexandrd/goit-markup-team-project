@@ -1,0 +1,219 @@
+/* TODO: extract heading and description classes to shared typography */
+.application-section-heading {
+  color: var(--black);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+  letter-spacing: -0.64px;
+  margin-bottom: 14px;
+}
+
+.application-section-description {
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71429;
+  margin-bottom: 20px;
+}
+
+.application-section-form-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.application-section-card {
+  display: none;
+}
+
+.text-input {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  padding: 16px 18px;
+
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.28571;
+
+  margin-bottom: 18px;
+  transition: border-color var(--transition);
+}
+
+.text-input::placeholder {
+  color: var(--black);
+}
+
+textarea.text-input {
+  resize: none;
+  height: 94px;
+}
+
+.text-input:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+.text-input:last-of-type {
+  margin-bottom: 20px;
+}
+
+.application-section-radio-title {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33333;
+  letter-spacing: -0.36px;
+
+  margin-bottom: 14px;
+}
+
+.application-section-radio-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.application-section-radio-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.application-section-radio-label {
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: -0.28px;
+}
+
+.application-section .button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.application-section-form-message {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  line-height: 1.33333;
+}
+.application-section-privacy-policy {
+  color: currentColor;
+  text-decoration-line: underline;
+}
+
+.radio-button {
+  cursor: pointer;
+  appearance: none;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(18, 20, 23, 0.2);
+  transition: var(--transition);
+  transition-property: border-color, background-color;
+}
+
+.radio-button:checked {
+  border-color: var(--green);
+  background-color: var(--green);
+  outline: 2px solid var(--white);
+  outline-offset: -4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-section-heading {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+  }
+
+  .application-section-description {
+    font-size: 18px;
+    line-height: 1.66667;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+    max-width: 586px;
+  }
+
+  .application-section-form {
+    max-width: 500px;
+  }
+
+  textarea.text-input {
+    height: 104px;
+    margin-bottom: 32px;
+  }
+
+  .application-section-radio-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+
+    margin-bottom: 16px;
+  }
+
+  .application-section-radio-input-group {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .application-section-form-message {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .application-section-description {
+    max-width: 709px;
+  }
+
+  .application-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 492px;
+    height: 578px;
+    border-radius: 30px;
+    padding: 0 20px 40px 20px;
+
+    background-color: var(--green);
+    background-image: url('../images/application/leave-an-application.png');
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .application-section-card-heading {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+
+  .application-section-card-description {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .application-section-form {
+    max-width: unset;
+    flex: 1;
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .application-section-card {
+    background-image: url('../images/application/leave-an-application@2x.png');
+  }
+}
