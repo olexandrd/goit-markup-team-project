@@ -104,6 +104,7 @@ button {
 .word-effect {
   display: inline-block;
   position: relative;
+  padding: 0 4px;
 }
 
 .word-effect::after {
@@ -114,6 +115,7 @@ button {
   height: 20px;
   z-index: -1;
   bottom: 0;
+  left: 0;
   position: absolute;
   width: 100%;
 }
