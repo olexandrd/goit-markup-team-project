@@ -1,0 +1,211 @@
+.proposal-container {
+    max-width: 1192px;
+}
+
+.proposal-wrapper {
+    background-image: var(--green_linear);
+    padding: 40px 20px;
+    border-radius: 16px;
+
+    position: relative;
+    z-index: -3;
+}
+
+.proposal-section-title {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 38px;
+    line-height: 1.05;
+    margin-bottom: 65px;
+}
+
+.proposal-section-title-highlight {
+    color: var(--highlight-green);
+}
+
+.leave-application-card {
+    background-color: var(--white);
+    padding: 40px 20px;
+    border-radius: 16px;
+
+    position: relative;
+}
+
+.leave-application-card-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.english-advantages-list {
+    max-width: 474px;
+    margin-bottom: 20px;
+}
+
+.english-advantage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.english-advantage:last-of-type {
+    margin-bottom: 0;
+}
+
+.english-advantage-checkmark {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    background-color: var(--green);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.english-advantage-checkmark-sign {
+    margin: auto;
+    stroke: var(--white);
+}
+
+.english-advantage-description {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+.proposal-section-button {
+    width: 100%;
+    max-width: 306px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.books-image {
+    display: none;
+}
+
+.leave-application-backcard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#backcard-1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    transform: rotate(11deg);
+}
+
+#backcard-2 {
+    left: 7px;
+    background-color: var(--light-green);
+    z-index: -2;
+    transform: rotate(-9deg);
+}
+
+@media screen and (min-width: 768px) {
+    .proposal-wrapper {
+        padding: 64px 18px;
+    }
+
+    .proposal-section-title {
+        margin: 0 14px 82px;
+        font-size: 60px;
+        line-height: 1.167;
+    }
+
+    .leave-application-card {
+        padding: 64px 185px 64px 32px;
+    }
+
+    .leave-application-card-name {
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+
+    .english-advantages-list {
+        max-width: 684px;
+        margin-bottom: 32px;
+    }
+
+    .english-advantage-checkmark {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .english-advantage-checkmark-sign {
+        width: 13px;
+        height: 9px;
+        stroke-width: 2px;
+    }
+
+    .english-advantage-description {
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+    }
+
+    .books-image {
+        display: block;
+        position: absolute;
+        top: 174px;
+        right: -49px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .proposal-wrapper {
+        padding: 64px 64px 142px 64px;
+    }
+
+    .proposal-section-title {
+        margin: 0 0 134px;
+        max-width: 776px;
+    }
+
+    .leave-application-card {
+        padding: 64px 306px 64px 64px;
+    }
+
+    .leave-application-card-name {
+        margin-bottom: 40px;
+    }
+
+    .english-advantages-list {
+        margin-bottom: 40px;
+    }
+
+    .books-image {
+        display: block;
+        position: absolute;
+        top: 128px;
+        right: 0;
+    }
+
+    #backcard-1 {
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: -1;
+        transform: rotate(11deg);
+        height: 85%;
+        top: 30px;
+    }
+
+    #backcard-2 {
+        left: 7px;
+        background-color: var(--light-green);
+        z-index: -2;
+        transform: rotate(-8deg);
+        height: 98%;
+    }
+}
