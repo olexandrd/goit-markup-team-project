@@ -27,10 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: -0.02em;
   font-family: 'Manrope', sans-serif;
-  color: var(--black_80);
+  color: var(--black);
   background-color: var(--white);
 }
 

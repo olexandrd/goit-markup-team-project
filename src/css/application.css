@@ -5,6 +5,7 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 1.125;
+  letter-spacing: -0.64px;
   margin-bottom: 14px;
 }
 
@@ -64,6 +65,7 @@ textarea.text-input {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33333;
+  letter-spacing: -0.36px;
 
   margin-bottom: 14px;
 }
@@ -85,6 +87,7 @@ textarea.text-input {
   color: var(--black);
   font-size: 14px;
   line-height: 1.71429;
+  letter-spacing: -0.28px;
 }
 
 .application-section .button {
@@ -125,6 +128,7 @@ textarea.text-input {
   .application-section-heading {
     font-size: 40px;
     line-height: 1.2;
+    letter-spacing: -0.8px;
     margin-bottom: 16px;
   }
 
@@ -149,6 +153,7 @@ textarea.text-input {
   .application-section-radio-title {
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: -0.4px;
 
     margin-bottom: 16px;
   }
@@ -192,6 +197,7 @@ textarea.text-input {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
+    letter-spacing: -0.8px;
   }
 
   .application-section-card-description {
