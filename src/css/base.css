@@ -7,7 +7,9 @@
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #fff;
+  --black_80: rgba(18, 20, 23, 0.5);
 
+  --font-family: 'Manrope', sans-serif;
   --section-padding: 80px;
   /* --intendance: 24px; */
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,3 +139,21 @@ button {
 }
 
 /*#endregion Misc */
+
+/* #region Typography */
+.section-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+  text-align: center;
+  color: var(--black);
+}
+
+.emphasized-paragraph {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* #endregion Typography */
