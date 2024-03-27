@@ -188,6 +188,7 @@ textarea.text-input {
     background-image: url('../images/application/leave-an-application.png');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
   }
 
   .application-section-card-heading {
