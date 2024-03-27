@@ -218,3 +218,8 @@ textarea.text-input {
     background-image: url('../images/application/leave-an-application@2x.png');
   }
 }
+@media only screen and (min-resolution: 384dpi) {
+  .application-section-card {
+    background-image: url('../images/application/leave-an-application@4x.png');
+  }
+}
