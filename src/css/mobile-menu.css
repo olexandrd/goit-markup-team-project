@@ -27,7 +27,7 @@
   top: 0;
   right: 0;
   width: 240px;
-  height: 100vh;
+  height: 100dvh;
   padding: 20px;
   background-color: var(--green);
   transform: translateX(100%);
@@ -107,6 +107,7 @@
 
 .mobile-menu-soc-icon {
   fill: var(--white);
+  opacity: 0.8;
   transition: fill var(--transition);
 }
 

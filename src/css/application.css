@@ -1,22 +1,3 @@
-/* TODO: extract heading and description classes to shared typography */
-.application-section-heading {
-  color: var(--black);
-  text-align: center;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.125;
-  letter-spacing: -0.64px;
-  margin-bottom: 14px;
-}
-
-.application-section-description {
-  color: rgba(18, 20, 23, 0.5);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.71429;
-  margin-bottom: 20px;
-}
-
 .application-section-form-container {
   display: flex;
   gap: 32px;
@@ -65,7 +46,7 @@ textarea.text-input {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33333;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.02em;
 
   margin-bottom: 14px;
 }
@@ -87,7 +68,7 @@ textarea.text-input {
   color: var(--black);
   font-size: 14px;
   line-height: 1.71429;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.02em;
 }
 
 .application-section .button {
@@ -128,17 +109,8 @@ textarea.text-input {
   .application-section-heading {
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.02em;
     margin-bottom: 16px;
-  }
-
-  .application-section-description {
-    font-size: 18px;
-    line-height: 1.66667;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 64px;
-    max-width: 586px;
   }
 
   .application-section-form {
@@ -153,7 +125,7 @@ textarea.text-input {
   .application-section-radio-title {
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.02em;
 
     margin-bottom: 16px;
   }
@@ -171,10 +143,6 @@ textarea.text-input {
 }
 
 @media only screen and (min-width: 1280px) {
-  .application-section-description {
-    max-width: 709px;
-  }
-
   .application-section-card {
     display: flex;
     flex-direction: column;
@@ -188,6 +156,7 @@ textarea.text-input {
     background-image: url('../images/application/leave-an-application.png');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
   }
 
   .application-section-card-heading {
@@ -196,7 +165,7 @@ textarea.text-input {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.02em;
   }
 
   .application-section-card-description {
