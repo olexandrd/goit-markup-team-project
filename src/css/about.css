@@ -1,14 +1,9 @@
-.about-section {
+.about-section-content {
   display: flex;
   flex-direction: column;
 }
 
-.about-section .description-container {
-  flex-basis: 100%;
-  margin-bottom: 40px;
-}
-
-.about-section .card-heading {
+.about-section-content .card-heading {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.14286;
@@ -18,25 +13,20 @@
   margin-bottom: 16px;
 }
 
-.about-section .description {
-  text-align: center;
-  margin-top: 16px;
-}
-
-.about-section .item-container {
+.about-section-content .item-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.about-section .card {
+.about-section-content .card {
   background: var(--gray);
   border-radius: 16px;
   padding: 32px;
   flex-basis: 100%;
 }
 
-.about-section .image-background {
+.about-section-content .image-background {
   background-color: var(--green);
   border-radius: 16px;
   display: flex;
@@ -47,27 +37,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-section .description-container {
-    margin-bottom: 64px;
-  }
-
-  .about-section .description {
-    max-width: 658px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .about-section .item-container {
+  .about-section-content .item-container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
   }
 
-  .about-section .card {
+  .about-section-content .card {
     flex-basis: calc((100% - 32px) / 2);
   }
 
-  .about-section .image-background {
+  .about-section-content .image-background {
     flex-basis: 100%;
     padding: 16px 0;
     margin-top: 32px;
@@ -75,21 +55,21 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about-section {
+  .about-section-content {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   /* the width of the list item container should be 2/3 */
-  .about-section .item-container {
+  .about-section-content .item-container {
     flex-basis: calc(((100% - 64px) / 3) * 2);
   }
 
-  .about-section .card {
+  .about-section-content .card {
     flex-basis: calc((100% - 32px) / 2);
   }
 
-  .about-section .image-background {
+  .about-section-content .image-background {
     flex-basis: calc((100% - 64px) / 3);
     padding: 70px 0;
     margin-top: 0;
