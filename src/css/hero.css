@@ -1,6 +1,9 @@
 .hero-section {
   padding-top: 0;
 }
+.hero-container {
+  padding-top: 8px;
+}
 .hero-container .hero-wrapper {
   position: relative;
   background-color: var(--green);
@@ -142,6 +145,9 @@
   .hero-container .hero-title {
     margin-bottom: 32px;
   }
+  .hero-container {
+    padding-top: 32px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -191,5 +197,6 @@
   }
   .hero-container {
     max-width: 1216px;
+    padding-top: 16px;
   }
 }
