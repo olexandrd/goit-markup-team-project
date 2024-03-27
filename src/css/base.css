@@ -137,6 +137,24 @@ button {
   width: 100%;
 }
 
+.main-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05263;
+  color: var(--white)
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 60px;
+    line-height: 1.167;
+  }
+}
+
+.main-title-highlight {
+  color: var(--highlight-green);
+}
+
 /*#endregion Misc */
 
 /* #region Typography */
