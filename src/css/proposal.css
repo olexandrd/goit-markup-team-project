@@ -12,15 +12,7 @@
 }
 
 .proposal-section-title {
-    font-weight: 700;
-    color: var(--white);
-    font-size: 38px;
-    line-height: 1.05;
     margin-bottom: 65px;
-}
-
-.proposal-section-title-highlight {
-    color: var(--highlight-green);
 }
 
 .leave-application-card {
@@ -118,8 +110,7 @@
 
     .proposal-section-title {
         margin: 0 14px 82px;
-        font-size: 60px;
-        line-height: 1.167;
+        max-width: 776px;
     }
 
     .leave-application-card {
@@ -176,7 +167,6 @@
 
     .proposal-section-title {
         margin: 0 0 134px;
-        max-width: 776px;
     }
 
     .leave-application-card {
