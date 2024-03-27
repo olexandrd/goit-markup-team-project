@@ -89,14 +89,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-    .card-2{
-        display:none
+@media only screen and (max-width: 767px) {
+    .review-cards-wrapper .review-card:not(:first-child) {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 1279px) {
-    .card-3{
+    .review-cards-wrapper .review-card:not(:first-child):not(:nth-child(2)) {
         display: none;
     }
 }
