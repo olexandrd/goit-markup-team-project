@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.application-section-form {
+  max-width: 500px;
+}
+
 .application-section-card {
   display: none;
 }
@@ -150,10 +154,6 @@ textarea.text-input + .text-input-error-info {
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 16px;
-  }
-
-  .application-section-form {
-    max-width: 500px;
   }
 
   textarea.text-input {
