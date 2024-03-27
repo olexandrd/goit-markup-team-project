@@ -2,7 +2,7 @@ import tippy from 'tippy.js/dist/tippy.esm';
 import 'tippy.js/dist/tippy.css';
 
 function validatePhone(phone) {
-  const re = /^\d{10}$/;
+  const re = /^\+?(\d{10}|[0-9()-]{12,17})$/;
   return re.test(phone);
 }
 
