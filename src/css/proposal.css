@@ -3,6 +3,7 @@
 }
 
 .proposal-wrapper {
+    overflow: hidden;
     background-image: var(--green_linear);
     padding: 40px 20px;
     border-radius: 16px;
@@ -112,6 +113,7 @@
 
 @media screen and (min-width: 768px) {
     .proposal-wrapper {
+        overflow: visible;
         padding: 64px 18px;
     }
 
