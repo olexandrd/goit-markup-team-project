@@ -24,7 +24,7 @@
 }
 
 .text-input.text-input--invalid {
-  border-color: red;
+  border-color: var(--red);
   outline: none;
 }
 

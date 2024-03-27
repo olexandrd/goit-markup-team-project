@@ -8,6 +8,7 @@
   --gray: #f3f5f6;
   --white: #fff;
   --black_80: rgba(18, 20, 23, 0.5);
+  --red: #ff4d4f;
 
   --font-family: 'Manrope', sans-serif;
   --section-padding: 80px;
@@ -142,7 +143,6 @@ button {
     height: 20px;
   }
 }
-
 
 .main-title {
   font-weight: 700;
