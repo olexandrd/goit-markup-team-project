@@ -34,6 +34,11 @@
   justify-content: center;
   padding: 51px 0;
   margin-top: 20px;
+  overflow: hidden;
+}
+
+.about-section-content .image-background img {
+  max-width: fit-content;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,7 +75,7 @@
   }
 
   .about-section-content .image-background {
-    flex-basis: calc((100% - 64px) / 3);
+    flex-basis: calc((100% + 32px) / 3);
     padding: 70px 0;
     margin-top: 0;
     margin-left: 32px;

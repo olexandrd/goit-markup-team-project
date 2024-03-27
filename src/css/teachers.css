@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+  .section-description {
+    max-width: 709px;
+  }
+}
+
+.teachers-list {
+  display: grid;
+  grid-template-columns: minmax(auto, 335px);
+  place-content: center;
+  gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-list {
+    grid-template-columns: repeat(2, minmax(auto, 272px));
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-list {
+    grid-template-columns: repeat(4, minmax(auto, 232px));
+  }
+}
+
+.teachers-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers-img {
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.teachers-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.teachers-description {
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: center;
+  color: var(--black_80);
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
