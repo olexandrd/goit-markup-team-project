@@ -17,6 +17,7 @@
 
   --tablet-container-max-width: 704px;
   --desktop-container-max-width: 1088px;
+  --container-max-width: 335px;
 }
 
 html {
@@ -67,7 +68,7 @@ button {
 /*#region Misc */
 
 .container {
-  max-width: var(--desktop-container-max-width);
+  max-width: var(--container-max-width);
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -78,6 +79,7 @@ button {
   .container {
     padding-left: 32px;
     padding-right: 32px;
+    max-width: var(--tablet-container-max-width);
   }
 }
 
@@ -92,6 +94,10 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
+  .container {
+    max-width: var(--desktop-container-max-width);
+  }
+
   .section {
     --section-padding: 150px;
   }
