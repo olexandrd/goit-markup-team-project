@@ -21,6 +21,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    scroll-padding-top: 170px;
+  }
 }
 
 body {
