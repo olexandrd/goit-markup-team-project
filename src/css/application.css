@@ -12,6 +12,8 @@
   display: none;
 }
 
+/*#region Text Input */
+
 .text-input {
   display: block;
   width: 100%;
@@ -42,6 +44,7 @@
 
 .text-input-error-info {
   opacity: 0;
+  pointer-events: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +66,7 @@
 }
 
 .text-input.text-input--invalid + .text-input-error-info {
+  pointer-events: initial;
   opacity: 1;
 }
 
@@ -83,6 +87,8 @@ textarea.text-input + .text-input-error-info {
 .text-input:last-of-type {
   margin-bottom: 20px;
 }
+
+/*#endregion */
 
 .application-section-radio-title {
   color: var(--black);
