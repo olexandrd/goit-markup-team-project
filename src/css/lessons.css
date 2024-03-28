@@ -16,6 +16,10 @@
   flex-direction: column;
   justify-content: center;
   max-width: 335px;
+  padding: 40px 20px;
+  border: 1px solid var(--green);
+  transition: background-color var(--transition);
+  border-radius: 16px;
 }
 
 .lessons-list-item-title {
@@ -35,13 +39,6 @@
   letter-spacing: -0.02em;
   text-align: center;
   margin: 0 0 40px 0;
-}
-
-.lessons-list-item {
-  padding: 40px 20px;
-  border: 1px solid var(--green);
-  transition: background-color var(--transition);
-  border-radius: 12px;
 }
 
 .lessons-list-item:nth-child(2) {
@@ -107,6 +104,7 @@
   .lessons-list-item {
     width: calc((100% - 1 * 32px) / 2);
     padding: 32px 16px;
+    border-radius: 30px;
   }
 }
 
