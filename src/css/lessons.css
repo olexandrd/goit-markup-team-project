@@ -1,0 +1,128 @@
+.lessons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.lessons-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 335px;
+  padding: 40px 20px;
+  border: 1px solid var(--green);
+  transition: background-color var(--transition);
+  border-radius: 16px;
+}
+
+.lessons-list-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  display: block;
+  padding: 0 0 8px 0;
+}
+
+.lessons-list-item-price {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.lessons-list-item:nth-child(2) {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.lessons-list-item:nth-child(2) .lessons-list-item-button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.lessons-list-item:not(:nth-child(2)):hover,
+.lessons-list-item:not(:nth-child(2)):focus {
+  background-color: var(--green);
+}
+
+.lessons-list-item:nth-child(2) {
+  .lessons-list-item-description,
+  .lessons-list-item-title,
+  .lessons-list-item-price {
+    color: var(--white);
+  }
+}
+
+.lessons-list-item:hover .lessons-list-item-button,
+.lessons-list-item:focus .lessons-list-item-button {
+  border: 1px solid var(--white);
+}
+
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-description,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-description,
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-title,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-title,
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-price,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-price {
+  color: var(--white);
+}
+
+.lessons-list-item-description {
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: center;
+  color: var(--black_80);
+  margin: 0 0 20px 0;
+}
+
+.lessons-list-item-button {
+  text-decoration: none;
+  display: block;
+  transition: color var(--transition);
+  padding: 16px 39px 16px 39px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .lessons-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: flex-start;
+  }
+
+  .lessons-list-item {
+    width: calc((100% - 1 * 32px) / 2);
+    padding: 32px 16px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .lessons-list {
+    max-width: 704px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .lessons-list-item {
+    width: calc((100% - 2 * 25px) / 3);
+  }
+
+  .lessons-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: flex-start;
+  }
+}
