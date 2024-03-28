@@ -60,7 +60,7 @@
 }
 
 .text-input-error-info::after {
-  content: '\1f6c8';
+  content: '\26A0';
   color: var(--black_80);
   font-size: 26px;
 }
@@ -76,7 +76,7 @@ textarea.text-input {
 }
 
 textarea.text-input + .text-input-error-info {
-  top: 24px;
+  top: 26px;
 }
 
 .text-input:focus:not(.text-input--invalid) {
