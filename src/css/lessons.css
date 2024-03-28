@@ -112,6 +112,11 @@
 @media only screen and (min-width: 1280px) {
   .lessons-list-item {
     width: calc((100% - 2 * 25px) / 3);
+    justify-content: flex-start;
+  }
+
+  .lessons-list-item-description {
+    flex-grow: 1;
   }
 
   .lessons-list {
@@ -119,5 +124,6 @@
     flex-direction: row;
     gap: 25px;
     justify-content: flex-start;
+    align-items: stretch;
   }
 }
