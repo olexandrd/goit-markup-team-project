@@ -162,6 +162,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .proposal-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
   .proposal-wrapper {
     padding: 64px 64px 142px 64px;
   }
