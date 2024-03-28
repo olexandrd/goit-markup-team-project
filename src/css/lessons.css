@@ -41,12 +41,29 @@
   padding: 40px 20px;
   border: 1px solid var(--green);
   transition: background-color var(--transition);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
-.lessons-list-item:hover,
-.lessons-list-item:focus {
+.lessons-list-item:nth-child(2) {
   background-color: var(--green);
+  color: var(--white);
+}
+
+.lessons-list-item:nth-child(2) .lessons-list-item-button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.lessons-list-item:not(:nth-child(2)):hover,
+.lessons-list-item:not(:nth-child(2)):focus {
+  background-color: var(--green);
+}
+
+.lessons-list-item:nth-child(2) {
+  .lessons-list-item-description,
+  .lessons-list-item-title,
+  .lessons-list-item-price {
+    color: var(--white);
+  }
 }
 
 .lessons-list-item:hover .lessons-list-item-button,
@@ -54,12 +71,12 @@
   border: 1px solid var(--white);
 }
 
-.lessons-list-item:hover .lessons-list-item-description,
-.lessons-list-item:focus .lessons-list-item-description,
-.lessons-list-item:hover .lessons-list-item-title,
-.lessons-list-item:focus .lessons-list-item-title,
-.lessons-list-item:hover .lessons-list-item-price,
-.lessons-list-item:focus .lessons-list-item-price {
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-description,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-description,
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-title,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-title,
+.lessons-list-item:not(:nth-child(2)):hover .lessons-list-item-price,
+.lessons-list-item:not(:nth-child(2)):focus .lessons-list-item-price {
   color: var(--white);
 }
 
@@ -100,8 +117,8 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .lessons-list-item  {
-    width: calc((100% - 2* 25px) / 3);
+  .lessons-list-item {
+    width: calc((100% - 2 * 25px) / 3);
   }
 
   .lessons-list {
