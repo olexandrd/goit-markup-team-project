@@ -72,6 +72,9 @@
 }
 
 .proposal-section-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
     width: 100%;
     max-width: 306px;
     padding-left: 30px;
