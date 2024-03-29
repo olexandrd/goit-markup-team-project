@@ -29,7 +29,7 @@
   letter-spacing: -0.02em;
   text-align: center;
   display: block;
-  padding: 0 0 8px 0;
+  margin-bottom: 8px;
 }
 
 .lessons-list-item-price {
